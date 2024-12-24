@@ -3,7 +3,7 @@ import requests,os,zipfile
 words = requests.get("https://raw.githubusercontent.com/MichaelWehar/Public-Domain-Word-Lists/master/5000-more-common.txt").text.splitlines()
 print(len(words))
 m = []
-for i in words[]:
+for i in words:
     m = m + wikipedia.search(i,results=500)
     print(len(m))
 for i in m:
