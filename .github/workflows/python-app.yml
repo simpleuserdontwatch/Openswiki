@@ -32,7 +32,7 @@ jobs:
     - name: Check
       run: dir Openswiki/
     - name: Run
-      run: python Openswiki.py
+      run: python ${{ github.workspace }}/Openswiki.py
     - uses: actions/upload-artifact@v4
       with:
         name: ZIP-file of wiki
